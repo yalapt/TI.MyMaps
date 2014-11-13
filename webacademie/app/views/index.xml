@@ -1,0 +1,8 @@
+<Alloy>  
+    <Window class="container">
+    	<Button id="buttonGps" class="button">GPS</Button>
+    	<Button id="buttonHotel" class="button">Hôtel</Button>
+    	<Button id="buttonRestaurant" class="button">Restaurant</Button>
+    	<Button id="buttonExit" class="button">Quitter</Button>
+    </Window>  
+</Alloy>  

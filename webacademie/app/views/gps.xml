@@ -1,0 +1,9 @@
+<Alloy>  
+    <Window class="container">
+    	<Module id="mapview" module="ti.map" method="createView"></Module>
+    	<Label id="labelPosition" class="label"></Label>
+    	<Label id="labelDestination" class="label"></Label>
+    	<Label id="labelTrajet" class="label"></Label>
+    	<Label id="labelInstructions" class="label"></Label>
+    </Window>  
+</Alloy>  
