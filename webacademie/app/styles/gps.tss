@@ -1,5 +1,5 @@
 ".container": {
-	backgroundColor:"#ccc"
+	backgroundColor:"#333"
 },
 "#mapview": {
 	top: 0,
@@ -10,10 +10,26 @@
 	regionFit: true,
 	userLocation: true
 },
+".icon": {
+	left: "5%",
+},
+"#iconPosition": {
+	top: "4%"
+},
+"#iconDestination": {
+	top: "10%"
+},
+"#iconTrajet": {
+	font: { fontSize: 16 },
+	top: "83%"
+},
+"#iconInstructions": {
+	top: "88%"
+},
 ".label": {
 	color: "#333",
 	font: { fontSize: 12 },
-	left: "5%",
+	left: "15%",
 	right: "15%",
 	shadowColor: "#555",
 	shadowOffset: {x: 3, y: 3},
@@ -23,15 +39,15 @@
 	width: Ti.UI.SIZE, height: Ti.UI.SIZE
 },
 "#labelPosition": {
-	top: "4%",
+	top: "4%"
 },
 "#labelDestination": {
-	top: "10%",
+	top: "10%"
 },
 "#labelTrajet": {
 	font: { fontSize: 16 },
-	top: "83%",
+	top: "83%"
 },
 "#labelInstructions": {
-	top: "87%",
-},
+	top: "88%"
+}

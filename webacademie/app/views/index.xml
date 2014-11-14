@@ -1,8 +1,8 @@
 <Alloy>  
     <Window class="container">
-    	<Button id="buttonGps" class="button">GPS</Button>
-    	<Button id="buttonHotel" class="button">Hôtel</Button>
-    	<Button id="buttonRestaurant" class="button">Restaurant</Button>
-    	<Button id="buttonExit" class="button">Quitter</Button>
+    	<ImageView id="buttonGps" class="button" image="/button/gps.png" />
+    	<ImageView id="buttonHotel" class="button" image="/button/door.png" />
+    	<ImageView id="buttonRestaurant" class="button" image="/button/restaurant.png" />
+    	<ImageView id="buttonExit" class="button" image="/button/power.png" />
     </Window>  
 </Alloy>  

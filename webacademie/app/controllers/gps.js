@@ -16,7 +16,7 @@ var region = {
 };
 
 var startAnnotation = Alloy.Globals.Map.createAnnotation({
-    pincolor: Alloy.Globals.Map.ANNOTATION_GREEN,
+    image: "/map/map-pin-x96.png",
     latitude: pos.latitude,
     longitude: pos.longitude,
     draggable: false,
@@ -25,7 +25,7 @@ var startAnnotation = Alloy.Globals.Map.createAnnotation({
 });
 
 var finishAnnotation = Alloy.Globals.Map.createAnnotation({
-    pincolor: Alloy.Globals.Map.ANNOTATION_GREEN,
+    image: "/map/map-pin-x96.png",
     latitude: pos.latitude,
     longitude: pos.longitude,
     draggable: true,
@@ -43,7 +43,7 @@ var places = function() {
     var callback = function(data, token) {
         for(var i in data) {
             var anno = Alloy.Globals.Map.createAnnotation({
-                pincolor: Alloy.Globals.Map.ANNOTATION_GREEN,
+                image: "/map/map-pin-x96.png",
                 latitude: data[i].latitude,
                 longitude: data[i].longitude,
                 draggable: false,
@@ -63,7 +63,8 @@ var places = function() {
 
 var getPosition = function() {
     var callback = function(data) {
-        $.labelPosition.text = "Position : " + data.origin;
+        $.iconPosition.image = "/map/location-x64.png";
+        $.labelPosition.text = data.origin;
     };
     Alloy.Globals.Directions.refresh(travelMode, startAnnotation.latitude, startAnnotation.longitude, finishAnnotation.latitude, finishAnnotation.longitude, callback);
 };
@@ -81,10 +82,15 @@ var itineraire = function() {
         route.points = data.points;
         $.mapview.addRoute(route);
 
-        $.labelPosition.text = "Position : " + data.origin;
-        $.labelDestination.text = "Destination : " + data.destination;
-        $.labelTrajet.text = "Trajet : " + data.distance + ", " + data.duration;
-        $.labelInstructions.text = "Instructions : " + data.instructions;
+        $.iconPosition.image = "/map/location-x64.png";
+        $.iconDestination.image = "/map/racingflags-x64.png";
+        $.iconTrajet.image = "/map/gps-x64.png";
+        $.iconInstructions.image = "/map/crossroads-x64.png";
+
+        $.labelPosition.text = data.origin;
+        $.labelDestination.text = data.destination;
+        $.labelTrajet.text = data.distance + ", " + data.duration;
+        $.labelInstructions.text = data.instructions;
     };
     Alloy.Globals.Directions.refresh(travelMode, startAnnotation.latitude, startAnnotation.longitude, finishAnnotation.latitude, finishAnnotation.longitude, callback);
 };

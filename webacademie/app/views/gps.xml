@@ -1,9 +1,13 @@
 <Alloy>  
     <Window class="container">
     	<Module id="mapview" module="ti.map" method="createView"></Module>
+    	<ImageView id="iconPosition" class="icon" />
     	<Label id="labelPosition" class="label"></Label>
+    	<ImageView id="iconDestination" class="icon" />
     	<Label id="labelDestination" class="label"></Label>
+    	<ImageView id="iconTrajet" class="icon" />
     	<Label id="labelTrajet" class="label"></Label>
+    	<ImageView id="iconInstructions" class="icon" />
     	<Label id="labelInstructions" class="label"></Label>
     </Window>  
 </Alloy>  

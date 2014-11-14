@@ -1,24 +1,24 @@
 ".container": {
-	backgroundColor:"#ccc"
+	backgroundColor:"#333"
 },
 ".button": {
 	width: "42.5%",
 	height: "26.6%",
-	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
 },
 "#buttonGps": {
 	top: "5%",
-	left: "5%",
+	left: "5%"
 },
 "#buttonHotel": {
 	top: "5%",
-	right: "5%",
+	right: "5%"
 },
 "#buttonRestaurant": {
 	top: "36.6%",
-	left: "5%",
+	left: "5%"
 },
 "#buttonExit": {
 	top: "36.6%",
-	right: "5%",
+	right: "5%"
 }
